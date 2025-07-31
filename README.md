@@ -72,10 +72,6 @@ An interactive application that lets you draw in the air using hand gestures cap
   pip install -r requirements.txt
   ```
 
-## License
-
-This project is open source and available under the MIT License.
-
 ## Acknowledgments
 
 - Built with MediaPipe and OpenCV
