@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Canvas Web App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .video-container {
+            max-width: 80vw;
+            max-height: 80vh;
+            overflow: hidden;
+            border: 2px solid #333;
+            padding: 10px;
+            background-color: #fff;
+        }
+        .video-feed {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Air Canvas Web App</h1>
+    <p>To start drawing, access the live webcam feed below:</p>
+    
+    <div class="video-container">
+        <img class="video-feed" src="{{ url_for('video_feed') }}" alt="Live Video Feed">
+    </div>
+</body>
+</html>
